@@ -1,0 +1,28 @@
+---
+layout: default
+title: ""
+---
+<section class="hero">
+  <h1>Digital Forensics Portfolio</h1>
+  <p class="lede">
+    Hands-on DFIR work focused on <strong>data recovery</strong> and
+    <strong>mobile forensics</strong>. Each project pairs a written analysis with
+    runnable, auditable tool code and real captured output against synthetic or
+    public practice data.
+  </p>
+</section>
+
+<section class="projects-list">
+  {% assign projects = site.projects | sort: "date" | reverse %}
+  {% for project in projects %}
+  <a class="card" href="{{ project.url | relative_url }}">
+    {% if project.focus %}<p class="eyebrow">{{ project.focus }}</p>{% endif %}
+    <h2>{{ project.title }}</h2>
+    {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+    <p class="card-meta">
+      {% if project.date %}{{ project.date | date: "%b %Y" }}{% endif %}
+      {% if project.tools %} &middot; {{ project.tools }}{% endif %}
+    </p>
+  </a>
+  {% endfor %}
+</section>

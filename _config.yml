@@ -1,0 +1,31 @@
+# GitHub Pages site config. Builds remotely on Pages — no local Jekyll needed.
+title: Digital Forensics Portfolio
+description: Hands-on DFIR work in data recovery and mobile forensics — runnable tools with real, reproducible output.
+author: flyfishing4n6
+
+# Leave baseurl empty for a user/org site (username.github.io). For a project
+# repo served at username.github.io/<repo>, set baseurl: "/<repo>". All internal
+# links use relative_url so either setting works.
+baseurl: ""
+url: ""
+
+# Writeups are a collection so each gets its own page and the home page can list them.
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+# Keep the build simple and Pages-safe.
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

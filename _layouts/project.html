@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="project-header">
+    {% if page.focus %}<p class="eyebrow">{{ page.focus }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    <ul class="meta">
+      {% if page.date %}<li><span class="meta-label">Date</span> {{ page.date | date: "%B %-d, %Y" }}</li>{% endif %}
+      {% if page.tools %}<li><span class="meta-label">Tools</span> {{ page.tools }}</li>{% endif %}
+      {% if page.dataset %}<li><span class="meta-label">Data</span> {{ page.dataset }}</li>{% endif %}
+      {% if page.repo %}<li><span class="meta-label">Code</span> <a href="{{ page.repo }}">{{ page.repo_label | default: "Repository" }}</a></li>{% endif %}
+    </ul>
+  </header>
+
+  <div class="project-body">
+    {{ content }}
+  </div>
+
+  <p class="back"><a href="{{ '/' | relative_url }}">&larr; All projects</a></p>
+</article>
