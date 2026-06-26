@@ -6,11 +6,13 @@ permalink: /about/
 
 # About this portfolio
 
-This site collects hands-on digital-forensics projects across the discipline —
-**data recovery**, **mobile** and **host artifact analysis**, **timeline
-reconstruction**, and the **custom tooling** that supports an examination. Each
-project is a short writeup backed by a self-contained, runnable tool. The set
-grows over time and isn't limited to any single subdomain.
+This is my personal page for **journaling as I learn digital forensics** — a
+place to work through the discipline in the open and document what I figure out
+along the way. The entries span **data recovery**, **mobile** and **host
+artifact analysis**, **timeline reconstruction**, and the **custom tooling** that
+supports an examination. Each one is a short writeup backed by a self-contained,
+runnable tool. The set grows over time and isn't limited to any single
+subdomain.
 
 ### How the work is done
 

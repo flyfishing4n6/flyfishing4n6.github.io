@@ -3,13 +3,16 @@ layout: default
 title: ""
 ---
 <section class="hero">
-  <h1>Digital Forensics</h1>
+  <img class="avatar" src="{{ '/assets/img/avatar.png' | relative_url }}"
+       alt="flyfishing4n6" width="88" height="88">
+  <h1>Digital Forensics, in the open</h1>
   <p class="lede">
-    Hands-on forensics work across the discipline — recovering deleted data,
+    My working journal as I learn digital forensics — recovering deleted data,
     parsing <strong>mobile</strong> and <strong>host</strong> artifacts, building
     timelines, and writing the custom tooling that makes an examination
-    auditable. Each project pairs a written analysis with runnable, auditable
+    auditable. Each entry is a written analysis backed by runnable, auditable
     code and real captured output against synthetic or public practice data.
+    I'm building in public and documenting what I learn along the way.
   </p>
 </section>
 
@@ -20,10 +23,7 @@ title: ""
     {% if project.focus %}<p class="eyebrow">{{ project.focus }}</p>{% endif %}
     <h2>{{ project.title }}</h2>
     {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-    <p class="card-meta">
-      {% if project.date %}{{ project.date | date: "%b %Y" }}{% endif %}
-      {% if project.tools %} &middot; {{ project.tools }}{% endif %}
-    </p>
+    {% if project.tools %}<p class="card-meta">{{ project.tools }}</p>{% endif %}
   </a>
   {% endfor %}
 </section>

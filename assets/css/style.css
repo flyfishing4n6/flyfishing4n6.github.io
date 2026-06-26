@@ -55,6 +55,11 @@ strong { font-weight: 650; }
 
 /* Home hero + cards */
 .hero { margin-bottom: 40px; }
+.hero .avatar {
+  width: 88px; height: 88px; border-radius: 50%;
+  display: block; margin: 0 0 18px; object-fit: cover;
+  border: 2px solid var(--border, rgba(0,0,0,0.1));
+}
 .hero h1 { font-size: 2.3rem; }
 .projects-list { display: grid; gap: 18px; }
 .card {
