@@ -1,6 +1,6 @@
 # GitHub Pages site config. Builds remotely on Pages — no local Jekyll needed.
-title: Digital Forensics Portfolio
-description: Hands-on DFIR work in data recovery and mobile forensics — runnable tools with real, reproducible output.
+title: flyfishing4n6 · Digital Forensics
+description: Hands-on digital forensics across the discipline — data recovery, mobile and host artifacts, and the custom tooling to analyze them. Runnable code with real, reproducible output.
 author: flyfishing4n6
 
 # Leave baseurl empty for a user/org site (username.github.io). For a project

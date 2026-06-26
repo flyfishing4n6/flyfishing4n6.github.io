@@ -6,9 +6,11 @@ permalink: /about/
 
 # About this portfolio
 
-This site collects hands-on digital-forensics projects in two focus areas:
-**data recovery** and **mobile forensics**. Each project is a short writeup backed
-by a self-contained, runnable tool.
+This site collects hands-on digital-forensics projects across the discipline —
+**data recovery**, **mobile** and **host artifact analysis**, **timeline
+reconstruction**, and the **custom tooling** that supports an examination. Each
+project is a short writeup backed by a self-contained, runnable tool. The set
+grows over time and isn't limited to any single subdomain.
 
 ### How the work is done
 
